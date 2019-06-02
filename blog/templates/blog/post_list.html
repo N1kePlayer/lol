@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>FIRST</title>
+    </head>
+    <div>
+        <h1><a href="">FIRST</a></h1>
+    </div>
+    <body>
+    {% for post in posts %}
+        <div>
+            <p>author: {{ post.author }}</p>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+    </body>
+</html>
